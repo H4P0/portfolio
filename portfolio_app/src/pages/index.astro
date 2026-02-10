@@ -1,0 +1,428 @@
+---
+---
+
+<!DOCTYPE html>
+<html class="dark" lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Harold Pacheco | Backend Developer Portfolio</title>
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@600;700;800&family=Fira+Code:wght@400;500&display=swap"
+		/>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+		/>
+		<!-- Tailwind CSS -->
+		<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+		<script is:inline>
+			tailwind.config = {
+				darkMode: 'class',
+				theme: {
+					extend: {
+						colors: {
+							primary: '#502bd4',
+							'primary-light': '#7c5dfa',
+							'background-light': '#f6f6f8',
+							'background-dark': '#0D1117',
+							surface: '#161b22',
+							'border-color': '#30363d',
+						},
+						fontFamily: {
+							display: ['Montserrat', 'sans-serif'],
+							body: ['Inter', 'sans-serif'],
+							mono: ['Fira Code', 'monospace'],
+						},
+						borderRadius: {
+							DEFAULT: '0.375rem',
+							lg: '0.5rem',
+							xl: '0.75rem',
+							'2xl': '1rem',
+							full: '9999px',
+						},
+						boxShadow: {
+							neon: '0 0 10px rgba(80, 43, 212, 0.5), 0 0 20px rgba(80, 43, 212, 0.3)',
+							'neon-hover': '0 0 15px rgba(80, 43, 212, 0.7), 0 0 30px rgba(80, 43, 212, 0.5)',
+						},
+					},
+				},
+			};
+		</script>
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
+	</head>
+	<body class="font-body antialiased grid-bg min-h-screen selection:bg-primary selection:text-white">
+		<!-- Navigation -->
+		<nav class="fixed w-full z-50 glass-nav top-0">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div class="flex items-center justify-between h-16">
+					<div class="flex-shrink-0">
+						<span class="font-mono text-primary-light font-bold text-xl">&lt;Harold/&gt;</span>
+					</div>
+					<div class="hidden md:block">
+						<div class="ml-10 flex items-baseline space-x-8">
+							<a class="text-gray-300 hover:text-primary-light px-3 py-2 rounded-md text-sm font-medium transition-colors" href="#about">About</a>
+							<a class="text-gray-300 hover:text-primary-light px-3 py-2 rounded-md text-sm font-medium transition-colors" href="#stack">Stack</a>
+							<a class="text-gray-300 hover:text-primary-light px-3 py-2 rounded-md text-sm font-medium transition-colors" href="#projects">Projects</a>
+							<a class="text-gray-300 hover:text-primary-light px-3 py-2 rounded-md text-sm font-medium transition-colors" href="#experience">Experience</a>
+						</div>
+					</div>
+					<div>
+						<a class="font-mono text-sm border border-primary text-primary-light hover:bg-primary hover:text-white px-4 py-2 rounded transition-all duration-300" href="#contact">
+							Start Collaboration
+						</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Hero Section -->
+		<section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden" id="about">
+			<div class="absolute top-1/4 right-0 w-96 h-96 bg-primary/20 rounded-full blur-3xl -z-10 opacity-50"></div>
+			<div class="absolute bottom-0 left-0 w-72 h-72 bg-blue-900/20 rounded-full blur-3xl -z-10 opacity-50"></div>
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+				<div class="lg:grid lg:grid-cols-12 lg:gap-8 items-center">
+					<div class="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-7 lg:text-left">
+						<div class="font-mono text-primary-light mb-4 text-sm tracking-wider inline-block bg-primary/10 px-3 py-1 rounded-full border border-primary/20">
+							System.Console.WriteLine("Hello World");
+						</div>
+						<h1 class="text-4xl tracking-tight font-display font-bold text-white sm:text-5xl md:text-6xl lg:text-7xl mb-6">
+							Harold Pacheco
+							<span class="block text-transparent bg-clip-text bg-gradient-to-r from-primary-light to-blue-400 text-3xl sm:text-4xl md:text-5xl lg:text-5xl mt-2">
+								Backend Developer Specialist
+							</span>
+						</h1>
+						<p class="mt-3 text-base text-gray-400 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0 font-light">
+							Architecting scalable, high-performance solutions in <span class="text-white font-medium">.NET</span> &amp; <span class="text-white font-medium">Cloud Environments</span>. I turn complex logic into clean, efficient code.
+						</p>
+						<div class="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0 flex flex-col sm:flex-row gap-4">
+							<a class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-primary-light md:py-4 md:text-lg md:px-10 shadow-neon transition-all hover:shadow-neon-hover" href="#projects">
+								View Projects
+							</a>
+							<a class="inline-flex items-center justify-center px-8 py-3 border border-gray-600 text-base font-medium rounded-md text-gray-300 bg-transparent hover:bg-gray-800 hover:text-white md:py-4 md:text-lg md:px-10 transition-colors font-mono" href="#">
+								<span class="mr-2 material-icons text-sm">download</span> Download CV
+							</a>
+						</div>
+					</div>
+					<div class="mt-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-5 lg:flex lg:items-center">
+						<div class="relative mx-auto w-full rounded-lg shadow-lg lg:max-w-md">
+							<div class="relative block w-full bg-[#1e1e1e] rounded-lg border border-gray-700 shadow-2xl overflow-hidden transform rotate-1 hover:rotate-0 transition-transform duration-500">
+								<div class="flex items-center px-4 py-2 bg-[#252526] border-b border-gray-700">
+									<div class="flex space-x-2">
+										<div class="w-3 h-3 rounded-full bg-red-500"></div>
+										<div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+										<div class="w-3 h-3 rounded-full bg-green-500"></div>
+									</div>
+									<div class="ml-4 text-xs text-gray-400 font-mono">BackendController.cs</div>
+								</div>
+								<div class="p-6 overflow-x-auto">
+									<pre class="font-mono text-sm text-gray-300 leading-relaxed"><code><span class="text-blue-400">public async</span> <span class="text-green-400">Task</span>&lt;<span class="text-green-400">IActionResult</span>&gt; <span class="text-yellow-300">Optimize</span>()
+{'{'}
+    <span class="text-pink-400">var</span> architecture = <span class="text-blue-400">new</span> <span class="text-green-400">MicroserviceBuilder</span>()
+        .<span class="text-yellow-300">WithDotNetCore</span>(<span class="text-purple-400">8.0</span>)
+        .<span class="text-yellow-300">WithDocker</span>()
+        .<span class="text-yellow-300">Build</span>();
+
+    <span class="text-blue-400">return</span> <span class="text-yellow-300">Ok</span>(architecture);
+{'}'}</code></pre>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Tech Stack Bento Grid -->
+		<section class="py-20 bg-background-dark relative border-t border-border-color/30" id="stack">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div class="text-center mb-16">
+					<h2 class="text-primary-light font-mono text-sm tracking-wide uppercase mb-2">My Arsenal</h2>
+					<h3 class="text-3xl md:text-4xl font-display font-bold text-white">Technology Stack</h3>
+				</div>
+				<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 md:gap-6 auto-rows-[minmax(140px,auto)]">
+					<!-- Main Tech: .NET -->
+					<div class="tech-card col-span-2 row-span-2 rounded-2xl p-6 flex flex-col justify-between relative overflow-hidden group">
+						<div class="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-full blur-2xl transform translate-x-10 -translate-y-10 group-hover:bg-primary/20 transition-all"></div>
+						<div>
+							<span class="font-mono text-xs text-primary-light border border-primary/30 px-2 py-1 rounded bg-primary/5">CORE</span>
+							<h4 class="text-2xl font-bold text-white mt-4 group-hover:text-primary-light transition-colors">.NET 8 &amp; C#</h4>
+							<p class="text-sm text-gray-400 mt-2">Enterprise-grade application development using the latest features of the ecosystem.</p>
+						</div>
+						<div class="mt-4 flex justify-end">
+							<img class="h-16 w-16 opacity-80 group-hover:opacity-100 transition-opacity" alt="DotNet Logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxQd1sOefv9Z-3wkWqfkBSPFpIE-BfLTjAHmgXyQ7tjlo2rpb1QHJp4rWWvyYlI7jB5YIQ8c1DmjNtE9wPKBHONtivcR9D76YzT7BfEczeDbDr629MjzDV8xCSDQr-br7BLb3QDPy874u-3XAOcfRanLXjtYGP0w17GAIJG8KOmrrwmxMfZd-LbyA4HoHBPmqi-gGQLPdYVq_8tOkdrdlXBP14aEVu1HkLzAx47j6lqHGN9x0JAy-eF64Q823Wih5Popy_CvhPkj4" />
+						</div>
+					</div>
+					<!-- SQL Server -->
+					<div class="tech-card col-span-2 md:col-span-2 lg:col-span-2 row-span-1 rounded-2xl p-6 flex items-center justify-between group">
+						<div>
+							<h4 class="text-lg font-bold text-white">SQL Server</h4>
+							<p class="text-xs text-gray-400 font-mono mt-1">Complex Queries &amp; Optimization</p>
+						</div>
+						<span class="material-icons text-4xl text-gray-600 group-hover:text-white transition-colors">storage</span>
+					</div>
+					<!-- Docker -->
+					<div class="tech-card col-span-1 md:col-span-2 lg:col-span-2 row-span-1 rounded-2xl p-6 flex flex-col justify-center items-center text-center group">
+						<span class="material-icons text-4xl text-blue-500 mb-2 group-hover:scale-110 transition-transform">layers</span>
+						<h4 class="text-lg font-bold text-white">Docker</h4>
+					</div>
+					<!-- Azure -->
+					<div class="tech-card col-span-1 md:col-span-1 lg:col-span-1 row-span-1 rounded-2xl p-4 flex flex-col justify-center items-center hover:bg-blue-900/10">
+						<span class="material-icons text-3xl text-blue-400 mb-1">cloud_queue</span>
+						<span class="text-sm font-medium text-gray-300">Azure</span>
+					</div>
+					<!-- Redis -->
+					<div class="tech-card col-span-1 md:col-span-1 lg:col-span-1 row-span-1 rounded-2xl p-4 flex flex-col justify-center items-center hover:bg-red-900/10">
+						<span class="material-icons text-3xl text-red-500 mb-1">bolt</span>
+						<span class="text-sm font-medium text-gray-300">Redis</span>
+					</div>
+					<!-- GitHub / CI/CD -->
+					<div class="tech-card col-span-2 md:col-span-2 lg:col-span-2 row-span-1 rounded-2xl p-6 flex items-center space-x-4 group">
+						<div class="bg-gray-800 p-3 rounded-lg group-hover:bg-gray-700 transition-colors">
+							<span class="material-icons text-white">integration_instructions</span>
+						</div>
+						<div>
+							<h4 class="text-lg font-bold text-white">CI/CD</h4>
+							<p class="text-xs text-gray-400 font-mono">GitHub Actions, Azure DevOps</p>
+						</div>
+					</div>
+					<!-- Architecture -->
+					<div class="tech-card col-span-2 lg:col-span-2 row-span-1 rounded-2xl p-6 flex flex-col justify-center group bg-primary/5 border-primary/20">
+						<h4 class="text-lg font-bold text-white mb-2">Architecture Patterns</h4>
+						<div class="flex flex-wrap gap-2">
+							<span class="text-xs font-mono bg-background-dark border border-gray-700 px-2 py-1 rounded text-gray-300">DDD</span>
+							<span class="text-xs font-mono bg-background-dark border border-gray-700 px-2 py-1 rounded text-gray-300">Microservices</span>
+							<span class="text-xs font-mono bg-background-dark border border-gray-700 px-2 py-1 rounded text-gray-300">CQRS</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Projects Section -->
+		<section class="py-20 relative bg-[#0f1219]" id="projects">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div class="flex flex-col md:flex-row justify-between items-end mb-12">
+					<div>
+						<h2 class="text-primary-light font-mono text-sm tracking-wide uppercase mb-2">Portfolio</h2>
+						<h3 class="text-3xl md:text-4xl font-display font-bold text-white">Featured Projects</h3>
+					</div>
+					<a class="hidden md:inline-flex items-center text-gray-400 hover:text-white transition-colors mt-4 md:mt-0" href="https://github.com" target="_blank" rel="noopener noreferrer">
+						View GitHub Profile <span class="material-icons ml-1 text-sm">arrow_outward</span>
+					</a>
+				</div>
+				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+					<!-- Project 1 -->
+					<article class="bg-surface rounded-xl border border-border-color overflow-hidden group hover:border-primary/50 transition-all duration-300 flex flex-col h-full">
+						<div class="h-48 bg-gradient-to-br from-gray-800 to-gray-900 relative overflow-hidden group-hover:opacity-90 transition-opacity">
+							<div class="absolute inset-0 flex items-center justify-center opacity-30">
+								<span class="material-icons text-6xl text-gray-600">shopping_cart</span>
+							</div>
+							<div class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-transparent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+						</div>
+						<div class="p-6 flex flex-col flex-grow">
+							<div class="flex justify-between items-start mb-4">
+								<h4 class="text-xl font-bold text-white group-hover:text-primary-light transition-colors">E-Commerce Microservices API</h4>
+								<div class="flex space-x-2">
+									<a class="text-gray-400 hover:text-white transition-colors" href="#"><span class="material-icons text-xl">code</span></a>
+									<a class="text-gray-400 hover:text-white transition-colors" href="#"><span class="material-icons text-xl">open_in_new</span></a>
+								</div>
+							</div>
+							<p class="text-gray-400 text-sm mb-6 flex-grow">A scalable microservices architecture for high-traffic retail. Handles inventory, payments, and orders asynchronously.</p>
+							<div class="flex flex-wrap gap-2 mt-auto">
+								<span class="px-2 py-1 rounded-md bg-[#21262d] border border-gray-700 text-xs font-mono text-primary-light">.NET 8</span>
+								<span class="px-2 py-1 rounded-md bg-[#21262d] border border-gray-700 text-xs font-mono text-gray-300">RabbitMQ</span>
+								<span class="px-2 py-1 rounded-md bg-[#21262d] border border-gray-700 text-xs font-mono text-gray-300">Docker</span>
+							</div>
+						</div>
+					</article>
+					<!-- Project 2 -->
+					<article class="bg-surface rounded-xl border border-border-color overflow-hidden group hover:border-primary/50 transition-all duration-300 flex flex-col h-full">
+						<div class="h-48 bg-gradient-to-br from-gray-800 to-gray-900 relative overflow-hidden group-hover:opacity-90 transition-opacity">
+							<div class="absolute inset-0 flex items-center justify-center opacity-30">
+								<span class="material-icons text-6xl text-gray-600">analytics</span>
+							</div>
+							<div class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-transparent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+						</div>
+						<div class="p-6 flex flex-col flex-grow">
+							<div class="flex justify-between items-start mb-4">
+								<h4 class="text-xl font-bold text-white group-hover:text-primary-light transition-colors">Real-time Data Processor</h4>
+								<div class="flex space-x-2">
+									<a class="text-gray-400 hover:text-white transition-colors" href="#"><span class="material-icons text-xl">code</span></a>
+								</div>
+							</div>
+							<p class="text-gray-400 text-sm mb-6 flex-grow">High-throughput data ingestion pipeline capable of processing 10k events/sec using Azure Functions.</p>
+							<div class="flex flex-wrap gap-2 mt-auto">
+								<span class="px-2 py-1 rounded-md bg-[#21262d] border border-gray-700 text-xs font-mono text-primary-light">C#</span>
+								<span class="px-2 py-1 rounded-md bg-[#21262d] border border-gray-700 text-xs font-mono text-gray-300">Azure Functions</span>
+								<span class="px-2 py-1 rounded-md bg-[#21262d] border border-gray-700 text-xs font-mono text-gray-300">SignalR</span>
+							</div>
+						</div>
+					</article>
+					<!-- Project 3 -->
+					<article class="bg-surface rounded-xl border border-border-color overflow-hidden group hover:border-primary/50 transition-all duration-300 flex flex-col h-full">
+						<div class="h-48 bg-gradient-to-br from-gray-800 to-gray-900 relative overflow-hidden group-hover:opacity-90 transition-opacity">
+							<div class="absolute inset-0 flex items-center justify-center opacity-30">
+								<span class="material-icons text-6xl text-gray-600">security</span>
+							</div>
+							<div class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-transparent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+						</div>
+						<div class="p-6 flex flex-col flex-grow">
+							<div class="flex justify-between items-start mb-4">
+								<h4 class="text-xl font-bold text-white group-hover:text-primary-light transition-colors">Custom Identity Server</h4>
+								<div class="flex space-x-2">
+									<a class="text-gray-400 hover:text-white transition-colors" href="#"><span class="material-icons text-xl">code</span></a>
+									<a class="text-gray-400 hover:text-white transition-colors" href="#"><span class="material-icons text-xl">open_in_new</span></a>
+								</div>
+							</div>
+							<p class="text-gray-400 text-sm mb-6 flex-grow">A robust OAuth2/OpenID Connect provider implementation for centralizing user authentication across multiple apps.</p>
+							<div class="flex flex-wrap gap-2 mt-auto">
+								<span class="px-2 py-1 rounded-md bg-[#21262d] border border-gray-700 text-xs font-mono text-primary-light">IdentityServer4</span>
+								<span class="px-2 py-1 rounded-md bg-[#21262d] border border-gray-700 text-xs font-mono text-gray-300">SQL Server</span>
+								<span class="px-2 py-1 rounded-md bg-[#21262d] border border-gray-700 text-xs font-mono text-gray-300">Redis</span>
+							</div>
+						</div>
+					</article>
+				</div>
+				<div class="mt-8 text-center md:hidden">
+					<a class="inline-flex items-center text-primary-light font-medium hover:text-white transition-colors" href="https://github.com" target="_blank" rel="noopener noreferrer">
+						View GitHub Profile <span class="material-icons ml-1 text-sm">arrow_outward</span>
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- Experience Timeline -->
+		<section class="py-20 bg-background-dark border-t border-border-color/30" id="experience">
+			<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div class="text-center mb-16">
+					<h2 class="text-primary-light font-mono text-sm tracking-wide uppercase mb-2">Career Path</h2>
+					<h3 class="text-3xl md:text-4xl font-display font-bold text-white">Experience</h3>
+				</div>
+				<div class="relative">
+					<div class="absolute left-0 md:left-1/2 h-full w-px bg-gray-800 transform md:-translate-x-1/2 ml-4 md:ml-0"></div>
+					<!-- Job 1 -->
+					<div class="relative z-10 mb-12">
+						<div class="flex flex-col md:flex-row items-center justify-between w-full">
+							<div class="order-1 md:w-5/12 mb-4 md:mb-0 md:text-right pl-12 md:pl-0">
+								<h4 class="text-xl font-bold text-white">Senior Backend Developer</h4>
+								<p class="text-primary-light font-medium">Tech Corp Global</p>
+								<p class="text-gray-500 text-sm mt-2">Leading the migration of legacy monoliths to microservices. Improved API response times by 40%.</p>
+							</div>
+							<div class="order-1 md:w-2/12 flex justify-start md:justify-center pl-1 md:pl-0 absolute left-0 md:static">
+								<div class="w-8 h-8 bg-surface border-2 border-primary rounded-full flex items-center justify-center shadow-[0_0_10px_rgba(80,43,212,0.5)]">
+									<div class="w-2 h-2 bg-primary rounded-full"></div>
+								</div>
+							</div>
+							<div class="order-1 md:w-5/12 pl-12 md:pl-0">
+								<span class="font-mono text-xs text-gray-400 bg-gray-800 px-2 py-1 rounded">2022 - Present</span>
+							</div>
+						</div>
+					</div>
+					<!-- Job 2 -->
+					<div class="relative z-10 mb-12">
+						<div class="flex flex-col md:flex-row items-center justify-between w-full">
+							<div class="order-1 md:w-5/12 mb-4 md:mb-0 md:text-right pl-12 md:pl-0 md:order-3">
+								<h4 class="text-xl font-bold text-white">.NET Developer</h4>
+								<p class="text-primary-light font-medium">Software House Solutions</p>
+								<p class="text-gray-500 text-sm mt-2">Developed core modules for ERP systems using C# and SQL Server. Implemented CI/CD pipelines.</p>
+							</div>
+							<div class="order-1 md:w-2/12 flex justify-start md:justify-center pl-1 md:pl-0 absolute left-0 md:static md:order-2">
+								<div class="w-8 h-8 bg-surface border-2 border-gray-600 rounded-full flex items-center justify-center">
+									<div class="w-2 h-2 bg-gray-600 rounded-full"></div>
+								</div>
+							</div>
+							<div class="order-1 md:w-5/12 pl-12 md:pl-0 md:text-right md:order-1">
+								<span class="font-mono text-xs text-gray-400 bg-gray-800 px-2 py-1 rounded">2019 - 2022</span>
+							</div>
+						</div>
+					</div>
+					<!-- Job 3 -->
+					<div class="relative z-10">
+						<div class="flex flex-col md:flex-row items-center justify-between w-full">
+							<div class="order-1 md:w-5/12 mb-4 md:mb-0 md:text-right pl-12 md:pl-0">
+								<h4 class="text-xl font-bold text-white">Junior Web Developer</h4>
+								<p class="text-primary-light font-medium">Creative Agency</p>
+								<p class="text-gray-500 text-sm mt-2">Full stack web development. Maintained legacy ASP.NET MVC applications.</p>
+							</div>
+							<div class="order-1 md:w-2/12 flex justify-start md:justify-center pl-1 md:pl-0 absolute left-0 md:static">
+								<div class="w-8 h-8 bg-surface border-2 border-gray-600 rounded-full flex items-center justify-center">
+									<div class="w-2 h-2 bg-gray-600 rounded-full"></div>
+								</div>
+							</div>
+							<div class="order-1 md:w-5/12 pl-12 md:pl-0">
+								<span class="font-mono text-xs text-gray-400 bg-gray-800 px-2 py-1 rounded">2017 - 2019</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer class="bg-[#0b0e13] border-t border-border-color py-12" id="contact">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div class="md:flex md:items-center md:justify-between">
+					<div class="mb-8 md:mb-0">
+						<span class="font-mono text-white font-bold text-2xl tracking-tighter">&lt;Harold/&gt;</span>
+						<p class="text-gray-500 text-sm mt-2 max-w-xs">Building the digital backbone of modern applications.</p>
+					</div>
+					<div class="flex space-x-6">
+						<a class="text-gray-400 hover:text-primary-light transition-colors" href="#" aria-label="GitHub">
+							<svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" /></svg>
+						</a>
+						<a class="text-gray-400 hover:text-primary-light transition-colors" href="#" aria-label="LinkedIn">
+							<svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" /></svg>
+						</a>
+						<a class="text-gray-400 hover:text-primary-light transition-colors" href="mailto:" aria-label="Email">
+							<span class="material-icons" aria-hidden="true">email</span>
+						</a>
+					</div>
+				</div>
+				<div class="mt-8 border-t border-gray-800 pt-8 flex flex-col md:flex-row md:justify-between">
+					<p class="text-base text-gray-500">© 2025 Harold Pacheco. All rights reserved.</p>
+					<p class="text-sm text-gray-600 mt-2 md:mt-0 font-mono">Designed with Tailwind CSS</p>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
+
+<style>
+	/* Custom Styles for Dark Technical Vibe */
+	body {
+		background-color: #0d1117;
+		color: #c9d1d9;
+	}
+
+	.grid-bg {
+		background-image:
+			linear-gradient(rgba(80, 43, 212, 0.05) 1px, transparent 1px),
+			linear-gradient(90deg, rgba(80, 43, 212, 0.05) 1px, transparent 1px);
+		background-size: 30px 30px;
+	}
+
+	.glass-nav {
+		background: rgba(13, 17, 23, 0.85);
+		backdrop-filter: blur(12px);
+		border-bottom: 1px solid rgba(48, 54, 61, 0.5);
+	}
+
+	.tech-card {
+		background: linear-gradient(145deg, #161b22 0%, #0d1117 100%);
+		border: 1px solid #30363d;
+		transition: all 0.3s ease;
+	}
+
+	.tech-card:hover {
+		border-color: #502bd4;
+		transform: translateY(-2px);
+		box-shadow: 0 4px 20px rgba(80, 43, 212, 0.15);
+	}
+</style>

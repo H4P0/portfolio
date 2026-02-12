@@ -1,0 +1,309 @@
+---
+import '../styles/global.css';
+---
+
+<!DOCTYPE html>
+<html class="dark" lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Harold Pacheco - Tech Stack</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap"
+		/>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+		/>
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
+	</head>
+	<body class="page-stack bg-background-dark text-white min-h-screen font-display antialiased selection:bg-primary-stack selection:text-white overflow-x-hidden">
+		<!-- Background Decoration -->
+		<div class="fixed inset-0 pointer-events-none z-0" aria-hidden="true">
+			<div class="absolute inset-0 bg-grid-pattern opacity-[0.05]"></div>
+			<div class="absolute top-0 right-0 w-1/3 h-1/3 bg-primary-stack/20 blur-[120px] rounded-full mix-blend-screen"></div>
+			<div class="absolute bottom-0 left-0 w-1/4 h-1/4 bg-primary-light-stack/10 blur-[100px] rounded-full mix-blend-screen"></div>
+		</div>
+
+		<main class="relative z-10 container mx-auto px-6 py-12 lg:py-20 max-w-7xl">
+			<!-- Back link -->
+			<a href="/" class="inline-flex items-center gap-2 mb-8 text-sm text-primary-light-stack font-mono opacity-80 hover:opacity-100 transition-opacity">
+				<span class="material-icons text-base" aria-hidden="true">terminal</span>
+				<span>root@harold:~/stack</span>
+			</a>
+
+			<!-- Header Section -->
+			<div class="mb-16">
+				<div class="flex items-center gap-2 mb-4">
+					<div class="h-2 w-2 rounded-full bg-accent-cyan animate-pulse" aria-hidden="true"></div>
+					<p class="font-mono text-sm text-primary-light-stack tracking-widest uppercase">System.Status: Online</p>
+				</div>
+				<h1 class="text-5xl md:text-6xl font-bold tracking-tight mb-4 bg-clip-text text-transparent bg-gradient-to-r from-white via-gray-200 to-gray-500">
+					Technical Arsenal
+				</h1>
+				<p class="text-xl text-gray-400 max-w-2xl font-light">
+					Architecting scalable solutions with the .NET ecosystem and modern cloud infrastructure.
+				</p>
+			</div>
+
+			<!-- Bento Grid Layout -->
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:grid-rows-3 gap-6 auto-rows-[minmax(180px,auto)]">
+				<!-- Main Feature: .NET Ecosystem -->
+				<div class="group bento-card relative lg:col-span-2 lg:row-span-2 bg-surface border border-primary-stack/30 rounded-2xl p-8 overflow-hidden hover:border-primary-stack transition-colors shadow-glow hover:shadow-glow-hover flex flex-col justify-between">
+					<div class="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 bg-primary-stack/10 rounded-full blur-3xl group-hover:bg-primary-stack/20 transition-all duration-500" aria-hidden="true"></div>
+					<div class="relative z-10">
+						<div class="flex justify-between items-start mb-6">
+							<div class="p-3 bg-primary-stack/10 rounded-xl border border-primary-stack/20">
+								<svg class="w-10 h-10 text-primary-stack" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+									<path d="M4 6H20M4 12H20M4 18H20" stroke="currentColor" stroke-linecap="round" stroke-width="2" />
+									<circle cx="18" cy="6" fill="currentColor" r="2" />
+									<circle cx="6" cy="18" fill="currentColor" r="2" />
+								</svg>
+							</div>
+							<span class="px-3 py-1 bg-primary-stack/20 text-primary-light-stack text-xs font-mono font-bold rounded-full border border-primary-stack/20">
+								v10.0 PREVIEW
+							</span>
+						</div>
+						<h2 class="text-3xl font-bold mb-3">.NET Ecosystem</h2>
+						<p class="text-gray-400 mb-8 leading-relaxed">
+							Comprehensive expertise in building enterprise-grade applications using the latest .NET standards. Leveraging the power of Blazor for interactive UIs and ASP.NET Core for high-performance APIs.
+						</p>
+					</div>
+					<div class="grid grid-cols-2 gap-4 relative z-10 mt-auto">
+						<div class="bg-background-dark/50 p-4 rounded-xl border border-gray-800 backdrop-blur-sm hover:border-primary-stack/50 transition-colors group/item">
+							<h3 class="text-white font-medium mb-1 group-hover/item:text-primary-stack transition-colors">ASP.NET Core</h3>
+							<p class="text-xs text-gray-500">High-performance APIs</p>
+						</div>
+						<div class="bg-background-dark/50 p-4 rounded-xl border border-gray-800 backdrop-blur-sm hover:border-primary-stack/50 transition-colors group/item">
+							<h3 class="text-white font-medium mb-1 group-hover/item:text-primary-stack transition-colors">Blazor United</h3>
+							<p class="text-xs text-gray-500">Full-stack Web UI</p>
+						</div>
+						<div class="bg-background-dark/50 p-4 rounded-xl border border-gray-800 backdrop-blur-sm hover:border-primary-stack/50 transition-colors group/item">
+							<h3 class="text-white font-medium mb-1 group-hover/item:text-primary-stack transition-colors">MAUI</h3>
+							<p class="text-xs text-gray-500">Cross-platform Native</p>
+						</div>
+						<div class="bg-background-dark/50 p-4 rounded-xl border border-gray-800 backdrop-blur-sm hover:border-primary-stack/50 transition-colors group/item">
+							<h3 class="text-white font-medium mb-1 group-hover/item:text-primary-stack transition-colors">gRPC</h3>
+							<p class="text-xs text-gray-500">Contract-first Services</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Languages Card -->
+				<div class="group bento-card lg:col-span-1 lg:row-span-2 bg-surface border border-gray-800 rounded-2xl p-6 hover:border-gray-600 transition-colors flex flex-col">
+					<div class="flex items-center gap-3 mb-6">
+						<span class="material-icons text-accent-pink" aria-hidden="true">code</span>
+						<h3 class="text-lg font-bold">Languages</h3>
+					</div>
+					<div class="space-y-6 flex-grow">
+						<div>
+							<div class="flex justify-between items-center mb-2">
+								<span class="font-bold text-white">C# 12+</span>
+								<span class="text-xs text-gray-500 font-mono">Expert</span>
+							</div>
+							<div class="bg-background-dark rounded-lg p-3 font-mono text-xs overflow-hidden border border-gray-800 group-hover:border-accent-pink/50 transition-colors code-snippet-block">
+								<div class="flex gap-2 mb-1 opacity-50 select-none">
+									<span>1</span>
+								</div>
+								<span class="code-syntax-keyword">public record</span> <span class="code-syntax-entity">User</span>(
+								<div class="pl-4">
+									<span class="code-syntax-keyword">int</span> Id,
+									<span class="code-syntax-string">string</span> Name
+								</div>
+								);
+							</div>
+						</div>
+						<div>
+							<div class="flex justify-between items-center mb-2">
+								<span class="font-bold text-white">TypeScript</span>
+								<span class="text-xs text-gray-500 font-mono">Advanced</span>
+							</div>
+							<div class="w-full bg-gray-800 h-1.5 rounded-full overflow-hidden">
+								<div class="bg-blue-500 h-full w-[85%] rounded-full"></div>
+							</div>
+						</div>
+						<div>
+							<div class="flex justify-between items-center mb-2">
+								<span class="font-bold text-white">SQL (T-SQL)</span>
+								<span class="text-xs text-gray-500 font-mono">Advanced</span>
+							</div>
+							<div class="w-full bg-gray-800 h-1.5 rounded-full overflow-hidden">
+								<div class="bg-orange-500 h-full w-[90%] rounded-full"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Databases Card -->
+				<div class="group bento-card bg-surface border border-gray-800 rounded-2xl p-6 hover:border-gray-600 transition-colors">
+					<div class="flex items-center gap-3 mb-4">
+						<span class="material-icons text-blue-400" aria-hidden="true">storage</span>
+						<h3 class="text-lg font-bold">Persistence</h3>
+					</div>
+					<ul class="space-y-3">
+						<li class="flex items-center gap-3">
+							<div class="w-8 h-8 rounded bg-white/5 flex items-center justify-center text-xs font-mono font-bold text-blue-400 border border-white/10">S</div>
+							<div>
+								<p class="text-sm font-medium">SQL Server 2025</p>
+								<p class="text-xs text-gray-500">Relational</p>
+							</div>
+						</li>
+						<li class="flex items-center gap-3">
+							<div class="w-8 h-8 rounded bg-white/5 flex items-center justify-center text-xs font-mono font-bold text-red-400 border border-white/10">R</div>
+							<div>
+								<p class="text-sm font-medium">Redis</p>
+								<p class="text-xs text-gray-500">Caching &amp; Pub/Sub</p>
+							</div>
+						</li>
+						<li class="flex items-center gap-3">
+							<div class="w-8 h-8 rounded bg-white/5 flex items-center justify-center text-xs font-mono font-bold text-purple-400 border border-white/10">E</div>
+							<div>
+								<p class="text-sm font-medium">Entity Framework</p>
+								<p class="text-xs text-gray-500">ORM / Code-First</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+				<!-- Architecture Card -->
+				<div class="group bento-card bg-surface border border-gray-800 rounded-2xl p-6 hover:border-gray-600 transition-colors relative overflow-hidden">
+					<div class="absolute -right-4 -bottom-4 w-24 h-24 border-4 border-gray-800 rounded-full opacity-20 group-hover:border-primary-stack/30 group-hover:scale-110 transition-all duration-500" aria-hidden="true"></div>
+					<div class="flex items-center gap-3 mb-4 relative z-10">
+						<span class="material-icons text-yellow-400" aria-hidden="true">architecture</span>
+						<h3 class="text-lg font-bold">Architecture</h3>
+					</div>
+					<div class="relative z-10 flex flex-wrap gap-2">
+						<span class="px-3 py-1.5 bg-background-dark border border-gray-700 rounded-lg text-xs font-medium text-gray-300 hover:text-white hover:border-primary-stack transition-colors cursor-default">Clean Architecture</span>
+						<span class="px-3 py-1.5 bg-background-dark border border-gray-700 rounded-lg text-xs font-medium text-gray-300 hover:text-white hover:border-primary-stack transition-colors cursor-default">DDD</span>
+						<span class="px-3 py-1.5 bg-background-dark border border-gray-700 rounded-lg text-xs font-medium text-gray-300 hover:text-white hover:border-primary-stack transition-colors cursor-default">Microservices</span>
+						<span class="px-3 py-1.5 bg-background-dark border border-gray-700 rounded-lg text-xs font-medium text-gray-300 hover:text-white hover:border-primary-stack transition-colors cursor-default">Event Sourcing</span>
+						<span class="px-3 py-1.5 bg-background-dark border border-gray-700 rounded-lg text-xs font-medium text-gray-300 hover:text-white hover:border-primary-stack transition-colors cursor-default">SOLID</span>
+					</div>
+				</div>
+
+				<!-- DevOps & Infra -->
+				<div class="group bento-card lg:col-span-2 bg-surface border border-gray-800 rounded-2xl p-6 hover:border-gray-600 transition-colors flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+					<div class="flex items-start gap-4">
+						<div class="p-3 bg-gray-800/50 rounded-xl">
+							<span class="material-icons text-accent-cyan text-3xl" aria-hidden="true">cloud_sync</span>
+						</div>
+						<div>
+							<h3 class="text-lg font-bold mb-1">DevOps &amp; Infrastructure</h3>
+							<p class="text-sm text-gray-400 max-w-sm">Automating deployment pipelines and orchestrating containers for seamless delivery.</p>
+						</div>
+					</div>
+					<div class="flex gap-4 items-center">
+						<div class="text-center group/icon">
+							<div class="w-12 h-12 bg-background-dark rounded-xl flex items-center justify-center border border-gray-700 mb-2 group-hover/icon:border-primary-stack transition-colors">
+								<span class="material-icons text-blue-500 text-xl" aria-hidden="true">all_inclusive</span>
+							</div>
+							<span class="text-[10px] uppercase tracking-wider text-gray-500">Docker</span>
+						</div>
+						<div class="text-center group/icon">
+							<div class="w-12 h-12 bg-background-dark rounded-xl flex items-center justify-center border border-gray-700 mb-2 group-hover/icon:border-primary-stack transition-colors">
+								<span class="material-icons text-blue-300 text-xl" aria-hidden="true">hub</span>
+							</div>
+							<span class="text-[10px] uppercase tracking-wider text-gray-500">K8s</span>
+						</div>
+						<div class="text-center group/icon">
+							<div class="w-12 h-12 bg-background-dark rounded-xl flex items-center justify-center border border-gray-700 mb-2 group-hover/icon:border-primary-stack transition-colors">
+								<span class="material-icons text-gray-200 text-xl" aria-hidden="true">rocket_launch</span>
+							</div>
+							<span class="text-[10px] uppercase tracking-wider text-gray-500">CI/CD</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Tools & IDE -->
+				<div class="group bento-card lg:col-span-2 bg-surface border border-gray-800 rounded-2xl p-6 hover:border-gray-600 transition-colors relative overflow-hidden">
+					<div class="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-primary-stack/5" aria-hidden="true"></div>
+					<div class="flex items-center gap-3 mb-4 relative z-10">
+						<span class="material-icons text-gray-400" aria-hidden="true">terminal</span>
+						<h3 class="text-lg font-bold">Command Center</h3>
+					</div>
+					<div class="grid grid-cols-2 md:grid-cols-4 gap-4 relative z-10">
+						<div class="flex items-center gap-2 p-2 rounded hover:bg-white/5 transition-colors cursor-pointer">
+							<div class="w-2 h-2 rounded-full bg-purple-500"></div>
+							<span class="text-sm font-mono text-gray-300">Visual Studio</span>
+						</div>
+						<div class="flex items-center gap-2 p-2 rounded hover:bg-white/5 transition-colors cursor-pointer">
+							<div class="w-2 h-2 rounded-full bg-blue-500"></div>
+							<span class="text-sm font-mono text-gray-300">VS Code</span>
+						</div>
+						<div class="flex items-center gap-2 p-2 rounded hover:bg-white/5 transition-colors cursor-pointer">
+							<div class="w-2 h-2 rounded-full bg-orange-500"></div>
+							<span class="text-sm font-mono text-gray-300">Postman</span>
+						</div>
+						<div class="flex items-center gap-2 p-2 rounded hover:bg-white/5 transition-colors cursor-pointer">
+							<div class="w-2 h-2 rounded-full bg-white"></div>
+							<span class="text-sm font-mono text-gray-300">GitHub</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer class="container mx-auto px-6 py-12 text-center text-gray-600 font-mono text-xs">
+			<p>© 2025 Harold Pacheco. Built with Tailwind CSS.</p>
+		</footer>
+	</body>
+</html>
+
+<style>
+	.page-stack {
+		font-family: 'Space Grotesk', sans-serif;
+	}
+
+	.page-stack .font-mono {
+		font-family: 'JetBrains Mono', monospace;
+	}
+
+	.bento-card {
+		transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+	}
+
+	.bg-grid-pattern {
+		background-image:
+			linear-gradient(to right, rgba(43, 43, 212, 0.1) 1px, transparent 1px),
+			linear-gradient(to bottom, rgba(43, 43, 212, 0.1) 1px, transparent 1px);
+		background-size: 40px 40px;
+	}
+
+	.code-syntax-keyword {
+		color: #ff7b72;
+	}
+
+	.code-syntax-entity {
+		color: #d2a8ff;
+	}
+
+	.code-syntax-string {
+		color: #a5d6ff;
+	}
+
+	.code-syntax-func {
+		color: #79c0ff;
+	}
+
+	.page-stack ::-webkit-scrollbar {
+		width: 8px;
+	}
+
+	.page-stack ::-webkit-scrollbar-track {
+		background: #0d1117;
+	}
+
+	.page-stack ::-webkit-scrollbar-thumb {
+		background: #2b2bd4;
+		border-radius: 4px;
+	}
+
+	.page-stack ::-webkit-scrollbar-thumb:hover {
+		background: #512bd4;
+	}
+</style>

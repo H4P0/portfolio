@@ -1,4 +1,5 @@
 ---
+import '../styles/global.css';
 ---
 
 <!DOCTYPE html>
@@ -19,41 +20,6 @@
 			rel="stylesheet"
 			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
 		/>
-		<!-- Tailwind CSS -->
-		<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-		<script is:inline>
-			tailwind.config = {
-				darkMode: 'class',
-				theme: {
-					extend: {
-						colors: {
-							primary: '#502bd4',
-							'primary-light': '#7c5dfa',
-							'background-light': '#f6f6f8',
-							'background-dark': '#0D1117',
-							surface: '#161b22',
-							'border-color': '#30363d',
-						},
-						fontFamily: {
-							display: ['Montserrat', 'sans-serif'],
-							body: ['Inter', 'sans-serif'],
-							mono: ['Fira Code', 'monospace'],
-						},
-						borderRadius: {
-							DEFAULT: '0.375rem',
-							lg: '0.5rem',
-							xl: '0.75rem',
-							'2xl': '1rem',
-							full: '9999px',
-						},
-						boxShadow: {
-							neon: '0 0 10px rgba(80, 43, 212, 0.5), 0 0 20px rgba(80, 43, 212, 0.3)',
-							'neon-hover': '0 0 15px rgba(80, 43, 212, 0.7), 0 0 30px rgba(80, 43, 212, 0.5)',
-						},
-					},
-				},
-			};
-		</script>
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="icon" href="/favicon.ico" />
 	</head>
@@ -67,9 +33,9 @@
 					</div>
 					<div class="hidden md:block">
 						<div class="ml-10 flex items-baseline space-x-8">
-							<a class="text-gray-300 hover:text-primary-light px-3 py-2 rounded-md text-sm font-medium transition-colors" href="#about">About</a>
-							<a class="text-gray-300 hover:text-primary-light px-3 py-2 rounded-md text-sm font-medium transition-colors" href="#stack">Stack</a>
-							<a class="text-gray-300 hover:text-primary-light px-3 py-2 rounded-md text-sm font-medium transition-colors" href="#projects">Projects</a>
+							<a class="text-gray-300 hover:text-primary-light px-3 py-2 rounded-md text-sm font-medium transition-colors" href="/about">About</a>
+							<a class="text-gray-300 hover:text-primary-light px-3 py-2 rounded-md text-sm font-medium transition-colors" href="/stack">Stack</a>
+							<a class="text-gray-300 hover:text-primary-light px-3 py-2 rounded-md text-sm font-medium transition-colors" href="/projects">Projects</a>
 							<a class="text-gray-300 hover:text-primary-light px-3 py-2 rounded-md text-sm font-medium transition-colors" href="#experience">Experience</a>
 						</div>
 					</div>
@@ -393,36 +359,3 @@
 		</footer>
 	</body>
 </html>
-
-<style>
-	/* Custom Styles for Dark Technical Vibe */
-	body {
-		background-color: #0d1117;
-		color: #c9d1d9;
-	}
-
-	.grid-bg {
-		background-image:
-			linear-gradient(rgba(80, 43, 212, 0.05) 1px, transparent 1px),
-			linear-gradient(90deg, rgba(80, 43, 212, 0.05) 1px, transparent 1px);
-		background-size: 30px 30px;
-	}
-
-	.glass-nav {
-		background: rgba(13, 17, 23, 0.85);
-		backdrop-filter: blur(12px);
-		border-bottom: 1px solid rgba(48, 54, 61, 0.5);
-	}
-
-	.tech-card {
-		background: linear-gradient(145deg, #161b22 0%, #0d1117 100%);
-		border: 1px solid #30363d;
-		transition: all 0.3s ease;
-	}
-
-	.tech-card:hover {
-		border-color: #502bd4;
-		transform: translateY(-2px);
-		box-shadow: 0 4px 20px rgba(80, 43, 212, 0.15);
-	}
-</style>

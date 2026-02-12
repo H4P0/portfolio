@@ -1,0 +1,313 @@
+---
+import '../styles/global.css';
+---
+
+<!DOCTYPE html>
+<html class="dark" lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Harold Pacheco - Projects</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+		/>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+		/>
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
+	</head>
+	<body class="page-projects bg-black min-h-screen text-gray-200 font-display selection:bg-primary selection:text-white">
+		<nav class="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-surface-border">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div class="flex items-center justify-between h-20">
+					<a href="/" class="flex items-center">
+						<span class="text-2xl font-bold tracking-tight text-white font-mono">&lt;HP /&gt;</span>
+					</a>
+					<div class="hidden md:block">
+						<div class="ml-10 flex items-baseline space-x-8">
+							<a class="text-gray-400 hover:text-primary transition-colors px-3 py-2 rounded-md font-medium" href="/">Home</a>
+							<a class="text-primary font-bold px-3 py-2 rounded-md font-medium" href="/projects">Work</a>
+							<a class="text-gray-400 hover:text-primary transition-colors px-3 py-2 rounded-md font-medium" href="/about">About</a>
+							<a class="bg-primary hover:bg-primary/90 text-white px-4 py-2 rounded-lg transition-colors font-medium" href="/#contact">Contact</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<main class="pt-32 pb-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+			<div class="mb-12">
+				<div class="flex items-center gap-4 mb-4">
+					<span class="h-px w-12 bg-primary"></span>
+					<span class="text-primary font-mono font-medium tracking-wider text-sm uppercase">Selected Projects</span>
+				</div>
+				<h1 class="text-4xl md:text-5xl lg:text-6xl font-bold font-title text-white mb-6 tracking-tight">
+					Engineering <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-purple-400">Case Studies</span>
+				</h1>
+				<p class="text-xl text-gray-400 max-w-2xl font-light font-display">
+					Deep dives into complex architectural challenges, highlighting scalability, performance optimization, and pattern implementation.
+				</p>
+			</div>
+
+			<div class="flex flex-col gap-16">
+				<!-- Section 1: EMS -->
+				<section>
+					<div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-6 gap-4 md:gap-6 auto-rows-[minmax(180px,auto)]">
+						<div class="bento-card col-span-1 md:col-span-4 lg:col-span-4 row-span-2 flex flex-col">
+							<div class="terminal-header px-4 py-3 flex items-center justify-between">
+								<div class="flex items-center gap-2">
+									<div class="w-2.5 h-2.5 rounded-full bg-red-500/80"></div>
+									<div class="w-2.5 h-2.5 rounded-full bg-yellow-500/80"></div>
+									<div class="w-2.5 h-2.5 rounded-full bg-green-500/80"></div>
+								</div>
+								<div class="font-mono text-xs text-primary-glow/80">~/projects/ems-core</div>
+							</div>
+							<div class="p-6 md:p-8 flex flex-col h-full relative">
+								<div class="absolute right-0 top-0 w-1/3 h-full bg-gradient-to-l from-primary/5 to-transparent pointer-events-none" aria-hidden="true"></div>
+								<h2 class="text-3xl font-bold font-title text-white mb-3 relative z-10">Employee Management System</h2>
+								<p class="text-gray-400 text-sm leading-relaxed mb-6 max-w-xl relative z-10 font-display">
+									A scalable microservices solution architected to handle enterprise HR data. Designed to ensure data consistency across distributed systems while maintaining high availability.
+								</p>
+								<div class="mt-auto mb-6 p-4 rounded bg-black/40 border border-primary/20 font-mono text-xs text-gray-400 relative overflow-hidden group">
+									<div class="absolute top-0 right-0 p-2 text-[10px] text-primary/50">C#</div>
+									<pre class="overflow-x-auto"><code>public async Task&lt;EmployeeDto&gt; GetById(int id) {'{'}
+    var emp = await _repo.Find(id);
+    return _mapper.Map&lt;EmployeeDto&gt;(emp);
+{'}'}</code></pre>
+								</div>
+								<div class="flex flex-wrap gap-2 mb-6">
+									<span class="px-2 py-1 rounded text-[10px] font-mono border border-blue-500/30 text-blue-300 bg-blue-900/10">.NET 10</span>
+									<span class="px-2 py-1 rounded text-[10px] font-mono border border-purple-500/30 text-purple-300 bg-purple-900/10">SQL Server</span>
+									<span class="px-2 py-1 rounded text-[10px] font-mono border border-cyan-500/30 text-cyan-300 bg-cyan-900/10">Docker</span>
+									<span class="px-2 py-1 rounded text-[10px] font-mono border border-orange-500/30 text-orange-300 bg-orange-900/10">RabbitMQ</span>
+								</div>
+								<div class="flex gap-4 mt-auto">
+									<button type="button" class="flex items-center px-4 py-2 bg-primary hover:bg-primary/80 text-white text-xs font-bold rounded transition-colors uppercase tracking-wider font-title">
+										Live Demo
+										<span class="material-icons-round ml-1 text-sm" aria-hidden="true">arrow_forward</span>
+									</button>
+									<button type="button" class="flex items-center px-4 py-2 border border-gray-600 hover:border-white text-gray-300 hover:text-white text-xs font-bold rounded transition-colors uppercase tracking-wider font-title bg-transparent">
+										GitHub
+									</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="bento-card col-span-1 md:col-span-2 lg:col-span-2 row-span-1 p-6 flex flex-col justify-center items-start">
+							<div class="flex items-center gap-2 mb-2">
+								<span class="material-symbols-outlined text-primary text-xl" aria-hidden="true">speed</span>
+								<span class="text-gray-400 text-xs font-mono uppercase tracking-wider">Query Performance</span>
+							</div>
+							<div class="text-4xl font-bold font-mono text-white mb-1">1M+</div>
+							<div class="text-xs text-gray-500 font-mono">Records processed &lt; 200ms</div>
+						</div>
+
+						<div class="bento-card col-span-1 md:col-span-2 lg:col-span-2 row-span-1 p-6 flex flex-col justify-center items-start relative overflow-hidden">
+							<div class="absolute -right-4 -bottom-4 w-24 h-24 bg-primary/20 rounded-full blur-2xl" aria-hidden="true"></div>
+							<div class="flex items-center gap-2 mb-2">
+								<span class="material-symbols-outlined text-green-400 text-xl" aria-hidden="true">check_circle</span>
+								<span class="text-gray-400 text-xs font-mono uppercase tracking-wider">Reliability</span>
+							</div>
+							<div class="text-4xl font-bold font-mono text-white mb-1">99.99%</div>
+							<div class="text-xs text-gray-500 font-mono">Uptime SLA guaranteed</div>
+						</div>
+
+						<div class="bento-card col-span-1 md:col-span-4 lg:col-span-2 row-span-1 p-5 flex flex-col justify-center">
+							<h4 class="text-xs font-bold text-gray-500 uppercase tracking-widest mb-4 font-mono border-b border-gray-800 pb-2">Pattern Implementation</h4>
+							<ul class="space-y-3">
+								<li class="flex items-center justify-between text-sm">
+									<span class="text-gray-300 font-mono">CQRS</span>
+									<span class="w-1.5 h-1.5 rounded-full bg-primary shadow-[0_0_8px_rgba(81,43,212,0.8)]" aria-hidden="true"></span>
+								</li>
+								<li class="flex items-center justify-between text-sm">
+									<span class="text-gray-300 font-mono">Event Sourcing</span>
+									<span class="w-1.5 h-1.5 rounded-full bg-primary shadow-[0_0_8px_rgba(81,43,212,0.8)]" aria-hidden="true"></span>
+								</li>
+								<li class="flex items-center justify-between text-sm">
+									<span class="text-gray-300 font-mono">DDD</span>
+									<span class="w-1.5 h-1.5 rounded-full bg-primary shadow-[0_0_8px_rgba(81,43,212,0.8)]" aria-hidden="true"></span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+
+				<!-- Section 2: Fin Engine + Metrics -->
+				<section>
+					<div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-6 gap-4 md:gap-6 auto-rows-[minmax(180px,auto)]">
+						<div class="bento-card col-span-1 md:col-span-2 lg:col-span-2 row-span-2 flex flex-col p-6 relative overflow-hidden">
+							<img
+								alt="Abstract network nodes"
+								class="absolute inset-0 w-full h-full object-cover opacity-10 mix-blend-screen pointer-events-none"
+								src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQFvszOLitJZSuN8rQBaRnLPSAe3hWtCRUYdpz85zE_L1PqWfelv24gLhzF2-Z4ApZ712JN7TOCdfbe9ewlyB6jFk-h_VNGkTD4P2S3vnKxZbVi0DP2iGpHpFmxOlDxM0qObP0FjwHjWnYmfrec_ZLadL7gdHnlY3vXzBS042uJZrFJn4xCIlr9ep_XtcmSyoYXqc0V8jfvqchmUfQPBgDW-Hhtdfs-m36m7icCsVU4yox7ILxkI-MNu735G9ayID2X7NWmJG3OBM"
+								width="400"
+								height="400"
+								fetchpriority="low"
+							/>
+							<h3 class="relative z-10 text-lg font-bold font-title text-white mb-6">Engine Metrics</h3>
+							<div class="grid grid-cols-1 gap-4 relative z-10 h-full">
+								<div class="bg-black/40 border border-white/5 p-4 rounded-lg backdrop-blur-sm">
+									<div class="text-xs text-gray-400 font-mono mb-1">Latency</div>
+									<div class="text-3xl font-mono text-primary font-bold">5ms</div>
+									<div class="w-full bg-gray-800 h-1 mt-2 rounded-full overflow-hidden">
+										<div class="bg-primary h-full w-[95%] rounded-full"></div>
+									</div>
+								</div>
+								<div class="bg-black/40 border border-white/5 p-4 rounded-lg backdrop-blur-sm">
+									<div class="text-xs text-gray-400 font-mono mb-1">Throughput</div>
+									<div class="text-3xl font-mono text-green-400 font-bold">10k/s</div>
+									<div class="w-full bg-gray-800 h-1 mt-2 rounded-full overflow-hidden">
+										<div class="bg-green-400 h-full w-[80%] rounded-full"></div>
+									</div>
+								</div>
+								<div class="mt-auto">
+									<div class="text-xs font-mono text-gray-500 mb-2 uppercase">Topology</div>
+									<div class="flex items-center gap-2 text-xs text-gray-300 font-mono bg-white/5 p-2 rounded">
+										<span class="material-icons-round text-sm" aria-hidden="true">hub</span>
+										Redis Cache Layer
+									</div>
+									<div class="flex items-center gap-2 text-xs text-gray-300 font-mono bg-white/5 p-2 rounded mt-2">
+										<span class="material-icons-round text-sm" aria-hidden="true">cloud_queue</span>
+										Kafka Stream Processing
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="bento-card col-span-1 md:col-span-2 lg:col-span-4 row-span-2 flex flex-col">
+							<div class="terminal-header px-4 py-3 flex items-center justify-between">
+								<div class="flex items-center gap-2">
+									<div class="w-2.5 h-2.5 rounded-full bg-red-500/80"></div>
+									<div class="w-2.5 h-2.5 rounded-full bg-yellow-500/80"></div>
+									<div class="w-2.5 h-2.5 rounded-full bg-green-500/80"></div>
+								</div>
+								<div class="font-mono text-xs text-primary-glow/80">~/projects/fin-engine</div>
+							</div>
+							<div class="p-6 md:p-8 flex flex-col h-full relative">
+								<div class="absolute inset-0 bg-grid-pattern opacity-[0.03] pointer-events-none" aria-hidden="true"></div>
+								<div class="flex flex-col lg:flex-row gap-6 relative z-10 h-full">
+									<div class="flex-1">
+										<h2 class="text-3xl font-bold font-title text-white mb-3">Business Logic Engine</h2>
+										<p class="text-gray-400 text-sm leading-relaxed mb-6 font-display">
+											A centralized, high-performance rule-processing engine for real-time financial transactions. Enables dynamic rule injection without system downtime using compiled expression trees.
+										</p>
+										<div class="bg-black/60 rounded border border-gray-800 p-4 mb-6">
+											<h4 class="text-primary text-xs font-bold font-mono mb-2 uppercase">The Challenge</h4>
+											<p class="text-gray-300 text-xs font-mono">
+												&gt; Decoupling complex business rules from legacy infrastructure to allow <span class="text-white bg-primary/20 px-1 rounded">hot-swapping logic</span> in production environments.
+											</p>
+										</div>
+										<div class="flex gap-4 mt-auto">
+											<button type="button" class="flex items-center px-4 py-2 bg-primary hover:bg-primary/80 text-white text-xs font-bold rounded transition-colors uppercase tracking-wider font-title">
+												Live Demo
+												<span class="material-icons-round ml-1 text-sm" aria-hidden="true">arrow_forward</span>
+											</button>
+											<button type="button" class="flex items-center px-4 py-2 border border-gray-600 hover:border-white text-gray-300 hover:text-white text-xs font-bold rounded transition-colors uppercase tracking-wider font-title bg-transparent">
+												GitHub
+											</button>
+										</div>
+									</div>
+									<div class="lg:w-1/3 flex flex-col gap-3">
+										<div class="text-xs font-bold text-gray-500 uppercase tracking-widest font-mono mb-1">Tech Stack</div>
+										<div class="flex flex-wrap gap-2">
+											<span class="px-2 py-1 rounded text-[10px] font-mono border border-indigo-500/30 text-indigo-300 bg-indigo-900/10">C#</span>
+											<span class="px-2 py-1 rounded text-[10px] font-mono border border-red-500/30 text-red-300 bg-red-900/10">Kafka</span>
+											<span class="px-2 py-1 rounded text-[10px] font-mono border border-pink-500/30 text-pink-300 bg-pink-900/10">Redis</span>
+											<span class="px-2 py-1 rounded text-[10px] font-mono border border-teal-500/30 text-teal-300 bg-teal-900/10">gRPC</span>
+										</div>
+										<div class="mt-6 p-3 rounded bg-white/5 border border-white/5 text-xs font-mono text-gray-400">
+											<div class="text-[10px] text-gray-500 mb-1">// Implementation</div>
+											Expression.Lambda&lt;Func&lt;T, bool&gt;&gt;
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+
+			<div class="mt-20 text-center">
+				<p class="text-sm font-mono text-gray-500">
+					// More detailed documentation available upon request.
+				</p>
+			</div>
+		</main>
+
+		<div class="fixed inset-0 pointer-events-none z-[-1] overflow-hidden" aria-hidden="true">
+			<div class="absolute top-[10%] left-[5%] w-[500px] h-[500px] bg-primary/5 rounded-full blur-[100px]"></div>
+			<div class="absolute bottom-[10%] right-[5%] w-[500px] h-[500px] bg-purple-900/5 rounded-full blur-[100px]"></div>
+		</div>
+	</body>
+</html>
+
+<style>
+	.page-projects {
+		font-family: 'Space Grotesk', sans-serif;
+	}
+
+	.page-projects .font-mono {
+		font-family: 'JetBrains Mono', monospace;
+	}
+
+	.page-projects .font-title {
+		font-family: 'Montserrat', sans-serif;
+	}
+
+	.bg-grid-pattern {
+		background-image:
+			linear-gradient(to right, #30363d 1px, transparent 1px),
+			linear-gradient(to bottom, #30363d 1px, transparent 1px);
+		background-size: 40px 40px;
+	}
+
+	.bento-card {
+		background-color: #0d1117;
+		border: 1px solid rgba(81, 43, 212, 0.3);
+		border-radius: 1rem;
+		position: relative;
+		overflow: hidden;
+		transition: all 0.3s ease;
+	}
+
+	.bento-card:hover {
+		border-color: rgba(81, 43, 212, 0.8);
+		box-shadow: 0 0 30px -10px rgba(81, 43, 212, 0.25);
+		transform: translateY(-2px);
+	}
+
+	.terminal-header {
+		border-bottom: 1px solid rgba(81, 43, 212, 0.2);
+		background: rgba(22, 27, 34, 0.5);
+	}
+
+	.code-bg {
+		background-image: radial-gradient(#502bd4 0.5px, transparent 0.5px);
+		background-size: 20px 20px;
+		opacity: 0.1;
+	}
+
+	.page-projects ::-webkit-scrollbar {
+		width: 8px;
+		height: 8px;
+	}
+
+	.page-projects ::-webkit-scrollbar-track {
+		background: #0d1117;
+	}
+
+	.page-projects ::-webkit-scrollbar-thumb {
+		background: #30363d;
+		border-radius: 4px;
+	}
+
+	.page-projects ::-webkit-scrollbar-thumb:hover {
+		background: #502bd4;
+	}
+</style>

@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+/* Tema del portafolio (equivalente al config del HTML original) */
+@theme {
+	/* Colores */
+	--color-primary: #502bd4;
+	--color-primary-light: #7c5dfa;
+	--color-background-light: #f6f6f8;
+	--color-background-dark: #0d1117;
+	--color-surface: #161b22;
+	--color-border-color: #30363d;
+	/* About page */
+	--color-card-dark: #1e1a2e;
+	--color-card-border: #2d2845;
+	--color-background-about: #151220;
+	/* Stack page */
+	--color-primary-stack: #2b2bd4;
+	--color-primary-light-stack: #512bd4;
+	--color-card-dark-hover: #1f242c;
+	--color-code-gray: #8b949e;
+	--color-accent-cyan: #3fb950;
+	--color-accent-pink: #d2a8ff;
+	--shadow-glow: 0 0 15px -3px rgba(43, 43, 212, 0.3);
+	--shadow-glow-hover: 0 0 25px -5px rgba(43, 43, 212, 0.5);
+
+	/* Fuentes */
+	--font-display: "Montserrat", sans-serif;
+	--font-body: "Inter", sans-serif;
+	--font-mono: "Fira Code", monospace;
+
+	/* Border radius */
+	--radius-default: 0.375rem;
+	--radius-lg: 0.5rem;
+	--radius-xl: 0.75rem;
+	--radius-2xl: 1rem;
+	--radius-full: 9999px;
+
+	/* Sombras personalizadas */
+	--shadow-neon: 0 0 10px rgba(80, 43, 212, 0.5), 0 0 20px rgba(80, 43, 212, 0.3);
+	--shadow-neon-hover: 0 0 15px rgba(80, 43, 212, 0.7), 0 0 30px rgba(80, 43, 212, 0.5);
+	/* Projects page */
+	--color-primary-glow: #512bd4;
+	--color-surface-border: #30363d;
+	--font-title: "Montserrat", sans-serif;
+}
+
+/* Estilos propios (dark technical vibe) */
+body {
+	background-color: #0d1117;
+	color: #c9d1d9;
+}
+
+.grid-bg {
+	background-image:
+		linear-gradient(rgba(80, 43, 212, 0.05) 1px, transparent 1px),
+		linear-gradient(90deg, rgba(80, 43, 212, 0.05) 1px, transparent 1px);
+	background-size: 30px 30px;
+}
+
+.glass-nav {
+	background: rgba(13, 17, 23, 0.85);
+	backdrop-filter: blur(12px);
+	border-bottom: 1px solid rgba(48, 54, 61, 0.5);
+}
+
+.tech-card {
+	background: linear-gradient(145deg, #161b22 0%, #0d1117 100%);
+	border: 1px solid #30363d;
+	transition: all 0.3s ease;
+}
+
+.tech-card:hover {
+	border-color: #502bd4;
+	transform: translateY(-2px);
+	box-shadow: 0 4px 20px rgba(80, 43, 212, 0.15);
+}
